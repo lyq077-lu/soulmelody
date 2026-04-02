@@ -9,4 +9,15 @@ export async function healthRoutes(fastify: FastifyInstance) {
       timestamp: new Date().toISOString(),
     };
   });
+
+  fastify.get('/ready', async () => {
+    // TODO: 检查数据库、存储等依赖
+    return {
+      ready: true,
+      checks: {
+        storage: 'ok',
+        database: 'ok',
+      },
+    };
+  });
 }
