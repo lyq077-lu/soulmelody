@@ -1,0 +1,20 @@
+{
+  "name": "soulmelody",
+  "version": "0.1.0",
+  "description": "音灵AI - 智能音乐创作平台",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "cli": "node src/cli.js"
+  },
+  "keywords": ["music", "ai", "audio", "generator"],
+  "author": "音灵AI团队",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
